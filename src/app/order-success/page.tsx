@@ -2,7 +2,7 @@
 
 export const dynamic = 'force-dynamic'
 
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Header from '@/components/Header'
@@ -11,6 +11,29 @@ import api from '@/lib/api'
 import { FiCheckCircle, FiPackage, FiHome, FiShoppingBag } from 'react-icons/fi'
 
 export default function OrderSuccessPage() {
+  return (
+    <Suspense fallback={<OrderSuccessFallback />}>
+      <OrderSuccessContent />
+    </Suspense>
+  )
+}
+
+function OrderSuccessFallback() {
+  return (
+    <main className="min-h-screen">
+      <Header />
+      <div className="container mx-auto px-4 py-12">
+        <div className="animate-pulse text-center">
+          <div className="h-32 bg-gray-200 rounded-lg mb-8"></div>
+          <p className="text-gray-500">Loading your order details...</p>
+        </div>
+      </div>
+      <Footer />
+    </main>
+  )
+}
+
+function OrderSuccessContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const orderId = searchParams.get('orderId')
