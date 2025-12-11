@@ -12,6 +12,8 @@ interface Product {
   price: number
   compareAtPrice?: number
   images: Array<{ imageUrl: string }>
+  isNewArrival?: boolean
+  isFeatured?: boolean
 }
 
 export default function Bestsellers() {
