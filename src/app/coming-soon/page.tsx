@@ -4,15 +4,15 @@ export const metadata = {
 }
 
 const highlights = [
-  { title: 'Pure spirulina', copy: 'Sourced for clean nutrition with protein, iron, and antioxidants.' },
-  { title: 'No fillers', copy: 'No chemicals—only nutrient-dense goodness for your wellness.' },
-  { title: 'Daily-ready', copy: 'Smoothies, bowls, or sips—easy to add to your routine.' },
+  { title: 'Clean ingredients', copy: 'Real food, no fillers—crafted for everyday nourishment.' },
+  { title: 'Ready-to-eat goodness', copy: 'Snacks and mixes that fit busy days without prep hassle.' },
+  { title: 'Taste-first recipes', copy: 'Balanced flavor profiles so healthy eating feels indulgent.' },
 ]
 
 const productFocus = [
-  { label: 'Immunity boost', detail: 'Antioxidant support to keep you steady, naturally.' },
-  { label: 'Clean energy', detail: 'Plant protein that fuels without jitters or a crash.' },
-  { label: 'Recovery', detail: 'Supports post-activity balance and daily repair.' },
+  { label: 'Energy that lasts', detail: 'Steady fuel from whole-food recipes—no jitters, no crash.' },
+  { label: 'Immunity support', detail: 'Nutrient-dense ingredients to help keep you resilient.' },
+  { label: 'Better recovery', detail: 'Macros and micros tuned to help you bounce back faster.' },
 ]
 
 export default function ComingSoonPage() {
@@ -41,11 +41,11 @@ export default function ComingSoonPage() {
             Coming soon
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-emerald-600 to-teal-600">
-            A more vivid spirulina experience is almost here
+            A new kind of nourishing food experience is almost here
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            We&apos;re polishing a cleaner, faster way to discover Santript Aahar. Expect richer product stories,
-            clearer benefits, and a calmer path from curiosity to daily habit.
+            We&apos;re polishing a cleaner, faster way to discover our food products—built for real life, great taste,
+            and everyday wellness. Expect richer product stories, clearer benefits, and a calmer path from curiosity to habit.
           </p>
         </div>
 
@@ -83,8 +83,8 @@ export default function ComingSoonPage() {
                 Built around what you use most
               </h2>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Pure spirulina that lifts immunity, fuels clean energy, and supports recovery—without distractions.
-                Thoughtfully prepared so you can add it to daily life with ease.
+                Everyday food products that lift energy, support immunity, and help you recover—without distractions.
+                Thoughtfully prepared so you can add them to daily life with ease.
               </p>
               <div className="grid gap-3 sm:grid-cols-3">
                 {productFocus.map((item) => (
@@ -112,7 +112,7 @@ export default function ComingSoonPage() {
                 </div>
                 <p className="text-base leading-relaxed">
                   Crafted for clarity, speed, and calm. Thank you for your patience while we add the final gloss—so your
-                  wellness journey feels smoother than ever.
+                  everyday eating feels smoother, tastier, and more nourishing than ever.
                 </p>
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   <div className="rounded-xl bg-white/10 px-3 py-3 backdrop-blur">
